@@ -28,17 +28,12 @@ h1{
     margin-top: 6%;
     display: flex;
     justify-content: center;
-    /* justify-content: space-evenly; */
     gap: 12%;
-    /* border-radius: 50%; */
 }
 .choice{
     height: 200px;
     width: 200px;
     border-radius: 45%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 body{
     background-color: rgb(60, 75, 90);
@@ -49,16 +44,15 @@ body{
 }
 
 
-/* scoreboard */
+
 
 .scoreboard{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 5rem;
     font-size: 2rem;
     gap: 10rem;
-    /* border: 10px solid yellow; */
 }
 
 .score{
@@ -72,9 +66,7 @@ body{
 }
 
 .msg-container{
-    margin-top: 3rem;
-    /* color: white; */
-    /* border: 5px solid yellow; */
+    margin-top: 5rem;
 }
 
 #msg{
@@ -87,8 +79,6 @@ body{
 
 .start{
     margin-top: 2rem;
-    /* border: 2px solid yellow; */
-    /* display: inline; */
 }
 
 #close{
@@ -103,3 +93,64 @@ body{
     cursor: pointer;
 }
 
+
+
+@media (max-width: 800px){
+    img{
+        height: 180px;
+        width: 180px;
+    }
+    .choices{
+        margin-top: 6%;
+        display: flex;
+        justify-content: center;
+        gap: 0%;
+    }
+    .scoreboard{
+        margin-top: 1rem;
+        font-size: 1rem;
+        gap: 10rem;
+    }
+    .msg-container{
+        margin-top: 4rem;
+    }
+    #msg{
+        font-size: 2.5rem;
+    }
+    .choice{
+        height: 180px;
+        width: 180px;
+        border-radius: 45%;
+    }
+
+}
+
+@media (max-width: 500px){
+    img{
+        height: 100px;
+        width: 100px;
+    }
+    .choices{
+        margin-top: 6%;
+        display: flex;
+        justify-content: center;
+        gap: 0%;
+    }
+    .scoreboard{
+        margin-top:4rem ;
+        font-size: 1rem;
+        gap: 7rem;
+    }
+    .msg-container{
+        margin-top: 4rem;
+    }
+    #msg{
+        font-size: 2rem;
+    }
+    .choice{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+ 
